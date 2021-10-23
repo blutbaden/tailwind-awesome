@@ -2,7 +2,7 @@
 <html class="border-l" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Checkout</title>
+    <title>Dark mode toggle</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <style>
         * {
@@ -18,30 +18,22 @@
         .toggle-checkbox:checked + .toggle-label {
             background-color: rgb(76 73 188);
         }
-        .toggle-checkbox{
-            color: rgb(129 124 214);
-            background-color: rgb(249 220 108);
-            border-color: rgb(214 181 91);
-        }
-        .toggle-checkbox + .toggle-label {
-            background-color:  rgb(115 190 187);
-        }
     </style>
 </head>
 <body>
 <div class='h-screen flex items-center justify-center'>
     <div
-            class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in"
+            class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in"
     >
         <input
                 type="checkbox"
                 name="toggle"
                 id="toggle"
-                class="toggle-checkbox absolute focus:ring-transparent block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
+                class="bg-yellow-300 border-yellow-500 mr-1 focus:ring-transparent toggle-checkbox absolute block w-6 h-6 rounded-full border-2 appearance-none cursor-pointer"
         />
         <label
                 for="toggle"
-                class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+                class="toggle-label block h-8 -ml-1 -mt-1 rounded-full bg-green-400 cursor-pointer"
         ></label>
     </div>
 </div>
